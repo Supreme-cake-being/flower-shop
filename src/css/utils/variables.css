@@ -1,9 +1,9 @@
 :root {
-  /* Text colors */
+  /* text colors */
   --primary-text-color: #000000;
   --footer-text-color: #ffffff;
 
-  /* Button colors */
+  /* button colors */
   --default-button-color: #e86f54;
   --hover-button-color: #e25b41;
   --focus-button-color: #fa6f54;
