@@ -1,0 +1,51 @@
+.hero-container {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 136px;
+}
+
+.button-hero {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  right: auto;
+  cursor: pointer;
+  position: relative;
+  top: 10%;
+  border: none;
+  margin-left: 1px;
+}
+.hero-secrtion {
+  position: relative;
+  margin: 0 auto;
+  max-width: 768px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.hero-img {
+  height: 274px;
+  margin: 0 auto;
+  padding-top: 43.67px;
+}
+.subtitle-hero {
+  font-size: 14px;
+  margin-right: 14px;
+  font-family: 'Montesirrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.title-hero {
+  font-family: 'Montesirrat', sans-serif;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 52%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
