@@ -1,0 +1,13 @@
+.store-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.store-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
