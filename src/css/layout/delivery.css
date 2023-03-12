@@ -8,7 +8,10 @@ align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
-margin-bottom: 16px;
+margin-bottom: 6px;
+height: 51px;
+
+counter-increment: delivery-list-item;
 }
 
 .delivery-list:last-child{
@@ -16,14 +19,26 @@ margin-bottom: 16px;
 }
 
 .delivery-list::before{
-content: "2";
+content: counter(delivery-list-item);
 border: 1px solid #000000;
 border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 
-padding: 7.5px 13.5px;
-margin-right: 8px;
+position: absolute;
+width: 40px;
+height: 40px;
 
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
+} 
+
+.delivery-list-text{
+  margin-left: 48px;
+}
+
+.delivery-img{
+  width: 100%;
 }
