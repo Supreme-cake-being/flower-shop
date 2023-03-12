@@ -1,0 +1,29 @@
+.delivery{
+    margin-bottom: 32px;
+}
+
+.delivery-list{
+display: flex;
+align-items: center;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+margin-bottom: 16px;
+}
+
+.delivery-list:last-child{
+    margin-bottom: 32px;
+}
+
+.delivery-list::before{
+content: "2";
+border: 1px solid #000000;
+border-radius: 50%;
+
+padding: 7.5px 13.5px;
+margin-right: 8px;
+
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+}
