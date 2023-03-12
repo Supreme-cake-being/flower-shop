@@ -1,3 +1,46 @@
+/* MAIN BUTTONS */
+.order-button{
+    width: 208px;
+    height: 44px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 38px;
+}
+
+.subscribe-button{
+    width: 170px;
+    height: 40px;
+
+    font-size: 18px;
+    line-height: 1.33;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 38px;
+}
+
+.order-button:hover, .subscribe-button:hover{
+    background: var(--hover-button-color);
+}
+.order-button:focus, .subscribe-button:focus{
+    background: var(--focus-button-color);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+
+@media screen and (min-width:768px) {
+    .order-button, .subscribe-button{
+        width: 280px;
+        height: 64px;
+
+        font-size: 28px;
+        line-height: 0.86;
+    }
+}
+
 /* MODAL BUTTONS */
 
 .modal-order-button{
