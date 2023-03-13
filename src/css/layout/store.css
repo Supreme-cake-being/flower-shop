@@ -1,13 +1,128 @@
+/* .store-container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .store-container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .store-container {
+        max-width: 1279px;
+    }
+} */
+
 .store-list {
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between;
+    align-items: baseline;
+    row-gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 32px;
+}
+
+.store-item {
+    width: calc((100% - 16px) / 2);
+    min-width: fit-content;
+}
+
+.store-header {
+    font-size: 24px;
+    line-height: 1.21;
+    margin-bottom: 32px;
+}
+.store-img {
+    min-width: 136px;
+    height: 155px;
+    margin-bottom: 12px;
+}
+
+.store-img-name {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.store-img-cost {
+    font-size: 12px;
+    line-height: 1.25;
 }
 
 .store-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .store-img {
+        width: 344px;
+        height: 399px;
+    }
+
+    .store-list {
+        row-gap: 40px;
+    }
+
+    .store-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .store-header {
+        font-size: 44px;
+        line-height: 1.23;
+        margin-bottom: 60px;
+    }
+    
+    .store-img {
+        margin-bottom: 16px;
+    }
+    
+    .store-img-name {
+        margin-bottom: 8px;
+        font-size: 32px;
+        line-height: 1.22;
+    }
+    
+    .store-img-cost {
+        font-size: 24px;
+        line-height: 1.21;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .store-img {
+        width: 600px;
+        height: 542px;
+    }
+
+    .store-list {
+        row-gap: 64px;
+    }
+
+    .store-item {
+        width: calc((100% - 32px) / 2);
+    }
+    
+    .store-header {
+        margin-bottom: 80px;
+    }
+    .store-img {
+        margin-bottom: 12px;
+    }
+    
+    .store-img-name {
+        margin-bottom: 4px;
+        font-size: 36px;
+    }
+    
+    .store-img-cost {
+        font-size: 28px;
+    }
 }
