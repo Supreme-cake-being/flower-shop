@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-.modal-overlay {
+.overlay {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +12,6 @@
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 1000ms, visibility 1000ms;
 }
 
 .modal-overlay.is-hidden {
@@ -25,11 +26,24 @@
 }
 
 .modal {
-  position: relative;
-  width: 272px;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 272px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   text-align: center;
+
   /* outline: 1px dotted red; */
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-contactus {
@@ -96,6 +110,22 @@
   color: #5c5c5c;
 }
 
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid rgba(17, 17, 17, 0.7);
+}
+
+.modal-input:valid {
+  border: 1px solid #3cbc81;
+}
+
+.modal-input:invalid {
+  border: 1px solid #e74a3b;
+}
+/* .modal-input:invalid .modal-form > .modal-label {
+  color: #e74a3b;
+} */
+
 .modal-subscribe-label {
   text-align: left;
 }
@@ -122,6 +152,16 @@
   line-height: calc(17 / 14);
   border-radius: 8px;
   padding: 10px 0;
+  background-color: var(--default-button-color);
+  color: #fff;
+}
+
+.modal-btn:focus {
+  background-color: var(--focus-button-color);
+}
+
+.modal-btn:hover {
+  background-color: var(--hover-button-color);
 }
 
 .modal-contactus-btn {
@@ -136,6 +176,7 @@
 
 .modal-subscribe-side-left {
   height: 121px;
+  background-image: url(../../img/modal/);
   background-color: rgba(0, 0, 0, 0.3);
 }
 .modal-subscribe-side-right {
