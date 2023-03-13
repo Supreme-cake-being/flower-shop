@@ -1,40 +1,11 @@
-.section {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 60px;
-}
-
-.blog-title {
-  margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.blog-title::after {
-  content: '';
-  width: 202px;
-  height: 0px;
-  border: 1px solid #000000;
-}
-
-.slick-list {
-  /* margin-bottom: 4px; */
-  margin-bottom: 44px;
-}
-
 /* padding between images */
 .slick-slide {
   padding-right: 16px;
 }
 
 .slick-arrow {
+  font-size: 30px;
   width: 50px;
-  /* height: 40px; */
   background-color: transparent;
   border: none;
 }
@@ -42,18 +13,19 @@
 .my-slick-prev {
   position: absolute;
   left: 28%;
-  /* right: -1.78%; */
   top: 109%;
-  /* bottom: -21.66%; */
 }
 
 .my-slick-next {
   position: absolute;
   left: 53%;
-  /* right: -1.78%; */
   top: 109%;
-  /* bottom: -21.66%;   */
-  /* margin-bottom: 14px; */
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-desc {
@@ -62,18 +34,5 @@
   line-height: 1.22;
   text-align: center;
   padding-bottom: 24px;
-}
-
-.btn {
-  display: block;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #ffffff;
-  width: 170px;
-  height: 40px;
-  background-color: #e86f54;
-  border-radius: 38px;
-  margin: 0 auto;
-  border: none;
+  margin-top: 68px;
 }

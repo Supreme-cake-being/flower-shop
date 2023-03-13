@@ -1,21 +1,64 @@
-<section>
-  <h1>delivery</h1>
+<section class="section" id="delivery">
+  <div class="container">
+    <h2 class="section-title">delivery</h2>
 
-  <ol>
-    <li>Choose your bouquet and make an order on website</li>
+    <ul class="delivery-list">
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Choose your bouquet and make an order on website
+        </p>
+      </li>
 
-    <li>
-      Wait for the call to clarify the details of the order. You can pay online
-      or to the courier
-    </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Wait for the call to clarify the details of the order. You can pay
+          online or to the courier
+        </p>
+      </li>
 
-    <li>
-      Wait for the delivery at the selected time or pick up the order from the
-      store
-    </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
+      </li>
 
-    <li>Make someone happy or enjoy yourself</li>
-  </ol>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">Make someone happy or enjoy yourself</p>
+      </li>
+    </ul>
+  </div>
 
-  <img src="" alt="bouquet photo" />
+  <picture class="delivery-img">
+    <!-- Desktop -->
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./img/delivery/image-delivery_1280.webp 1x,
+        ./img/delivery/image-delivery_2560.webp 2x
+      "
+      type="image/webp"
+    />
+
+    <!-- Tablet -->
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ../img/delivery/image-delivery_768.webp  1x,
+        ../img/delivery/image-delivery_1536.webp 2x
+      "
+      type="image/webp"
+    />
+
+    <!-- Mobile -->
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ../img/delivery/image-delivery_320.webp 1x,
+        ../img/delivery/image-delivery_640.webp 2x
+      "
+      type="image/webp"
+    />
+    <img src="../images/image-delivery_320.webp" alt="bouquet photo" />
+  </picture>
 </section>

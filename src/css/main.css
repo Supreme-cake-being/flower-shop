@@ -9,6 +9,7 @@
 @import url('./utils/variables.css');
 
 /* base */
+@import url('./base/fonts.css');
 @import url('./base/reset.css');
 @import url('./base/common.css');
 

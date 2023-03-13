@@ -1,0 +1,108 @@
+/* MAIN BUTTONS */
+.order-button{
+    width: 208px;
+    height: 44px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 38px;
+}
+
+.subscribe-button{
+    width: 170px;
+    height: 40px;
+
+    font-size: 18px;
+    line-height: 1.33;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 38px;
+}
+
+.order-button:hover, .subscribe-button:hover{
+    background: var(--hover-button-color);
+}
+.order-button:focus, .subscribe-button:focus{
+    background: var(--focus-button-color);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+
+@media screen and (min-width:768px) {
+    .order-button, .subscribe-button{
+        width: 280px;
+        height: 64px;
+
+        font-size: 28px;
+        line-height: 0.86;
+    }
+}
+
+/* MODAL BUTTONS */
+
+.modal-order-button{
+    width: 240px;
+    height: 37px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .modal-order-button{
+        width: 416px;
+        height: 50px;
+
+        font-size: 18px;
+    }
+}
+
+.modal-subscribe-button{
+    width: 236px;
+    height: 37px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    background: var(--default-button-color);
+    border-radius: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .modal-subscribe-button{
+        width: 336px;
+        height: 50px;
+    }
+}
+
+.modal-close-button{
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) {
+    .modal-close-button{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.modal-order-button:hover, .modal-subscribe-button:hover{
+    background: var(--hover-button-color);
+}
+.modal-order-button:focus, .modal-subscribe-button:focus{
+    background: var(--focus-button-color);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+
