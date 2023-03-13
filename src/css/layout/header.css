@@ -1,1 +1,93 @@
+/* Mobole menu button */
+
+.header-menu-btn,
+.call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .header-menu-btn {
+        display: none;
+    }
+}
+
+/* ======= Mobile menu ========== */
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--default-button-color);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.close-menu-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    justify-content: center;
+    width: 100px;
+
+    margin-top: 124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-menu-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ============================== */
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+ }
+
+/* Nav */
+
+.top-nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .top-nav {
+        display: flex;
+    }
+}
+
+/* ============================ */
+
+.button-wrapper {
+    display: flex;
+    gap: 14px;
+}
 
