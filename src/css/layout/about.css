@@ -1,13 +1,21 @@
+/* npm run dev */
+
+/**
+  |============================
+  | About section
+  |============================
+*/
+
 .about-section {
   padding: 100px 0 60px 0;
 }
 
-.container {
+/* .container {
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .section-title {
   display: flex;
@@ -15,7 +23,7 @@
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.21;
+  line-height: calc(29 / 24);
   text-transform: uppercase;
   margin-bottom: 32px;
   gap: 14px;
@@ -23,8 +31,8 @@
 
 .section-title::after {
   content: '';
+  width: 100%;
 
-  width: 183px;
   border: 1px solid #000000;
 }
 
@@ -33,11 +41,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20 / 16);
   letter-spacing: 0.02em;
 
   margin-bottom: 16px;
-}
-
-.about-img {
 }
