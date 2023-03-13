@@ -1,6 +1,6 @@
 <!-- modal contact us -->
-<div class="modal-contactus modal is-hidden">
-  <svg class="modal-contactus-close modal-close">
+<div class="modal-contactus modal" data-modal="1">
+  <svg class="modal-contactus-close modal-close js-modal-close">
     <use href="../img/icons.svg#icon-close-big"></use>
   </svg>
   <strong class="modal-contactus-title modal-title">Contact us</strong>
@@ -22,17 +22,22 @@
       class="modal-contactus-input modal-input"
       placeholder="tanya.hill@example.com"
       type="email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
       id="email"
     />
-    <button class="modal-contactus-btn modal-btn btn" type="submit">
+    <button
+      class="modal-contactus-btn modal-btn btn js-modal-close js-open-modal"
+      data-modal="3"
+      type="submit"
+    >
       Send
     </button>
   </form>
 </div>
 
 <!-- modal thank you -->
-<div class="modal-thankyou modal is-hidden">
-  <svg class="modal-contactus-close modal-close">
+<div class="modal-thankyou modal" data-modal="3">
+  <svg class="modal-contactus-close modal-close js-modal-close">
     <use href="../img/icons.svg#icon-close-big"></use>
   </svg>
   <img class="modal-thankyou-img" src="" alt="" width="188" height="142" />
@@ -40,14 +45,14 @@
   <p class="modal-thankyou-desc modal-desc">
     We have received your contact details and will reach you soon.
   </p>
-  <button class="modal-thankyou-btn modal-btn btn" type="button">
+  <button class="modal-thankyou-btn modal-btn btn js-modal-close" type="button">
     Continue
   </button>
 </div>
 
 <!-- modal subscribe -->
-<div class="modal-subscribe modal is-hidden">
-  <svg class="modal-contactus-close modal-close">
+<div class="modal-subscribe modal" data-modal="2">
+  <svg class="modal-contactus-close modal-close js-modal-close">
     <use href="../img/icons.svg#icon-close-big"></use>
   </svg>
   <div class="modal-subscribe-side-left"></div>
@@ -67,6 +72,7 @@
         class="modal-subscribe-input modal-input"
         type="email"
         placeholder="Your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         id="subscribe-email"
       />
       <button class="modal-subscribe-btn modal-btn btn" type="submit">
