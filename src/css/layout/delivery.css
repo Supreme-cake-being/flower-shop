@@ -1,3 +1,4 @@
+/* MOBILE & COMMON */
 .delivery-list {
   display: flex;
   flex-direction: column;
@@ -42,6 +43,58 @@
   line-height: 17px;
 }
 
-.delivery-img {
+.delivery-bottom-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 480px;
   width: 100%;
+  height: 135px;
+
+  background-image: url(../../img/delivery/image-delivery_320.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .delivery-bottom-img {
+    background-image: url(../../img/delivery/image-delivery_640.webp);
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .delivery-bottom-img {
+    max-width: 768px;
+    height: 264px;
+    background-image: url(../../img/delivery/image-delivery_768.webp)
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .delivery-bottom-img {
+      background-image: url(../../img/delivery/image-delivery_1536.webp);
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .delivery-bottom-img {
+    max-width: 1280px;
+    height: 391px;
+    background-image: url(../../img/delivery/image-delivery_1280.webp)
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .delivery-bottom-img {
+      background-image: url(../../img/delivery/image-delivery_2560.webp);
+    }
+  }
 }
