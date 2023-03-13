@@ -1,7 +1,6 @@
 /* MAIN BUTTONS */
 .order-button{
-    width: 208px;
-    height: 44px;
+    min-height: 44px;
 
     font-size: 20px;
     line-height: 1.2;
