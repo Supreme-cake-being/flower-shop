@@ -6,21 +6,75 @@
       studio
     </h2>
     <picture>
+      <!-- desktop -->
       <source
-        srcset="./img/hero/image_home page_mob@1x.webp 1x, ./img/hero/image_home page_mob@2x.webp 2x"
-        type="hero/webp"
+        media="(min-width:1280px)"
+        srcset="
+          ./img/hero/image_home_page_desk@1x.webp 1x,
+          ./img/hero/image_home_page_desk@2x.webp 2x
+        "
+        type="image/webp"
       />
-      <img
-        class="hero-img"
-        src="./img/hero/image_home page_mob@1x.webp"
-        alt="flower"
-        width="145"
-        loading="lazy"
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./img/hero/image_home_page_desk@1x.jpg 1x,
+          ./img/hero/image_home_page_desk@2x.jpg 2x
+        "
+        type="image/jpg"
       />
+      <!-- tablet -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/hero/image_home_page_tab@1x.webp 1x,
+          ./img/hero/image_home_page_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/hero/image_home_page_tab@1x.png 1x,
+          ./img/hero/image_home_page_tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- mobile -->
+      <source
+        media="(min-width:320px)"
+        srcset="
+          ./img/hero/image_home_page_mob@1x.webp 1x,
+          ./img/hero/image_home_page_mob@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:320px)"
+        srcset="
+          ./img/hero/image_home_page_mob@1x.png 1x,
+          ./img/hero/image_home_page_mob@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./img/hero/image_home_page_mob@1x.png" alt="flower" />
     </picture>
     <button class="button-hero">
-      <svg class="button-img" width="64" height="76">
+      <svg
+        media="max-width:767px"
+        class="button-img-mob"
+        width="64"
+        height="76"
+      >
         <use href="./img/icons.svg#icon-btn_mob"></use>
+      </svg>
+      <svg
+        media="min-width:768px"
+        class="button-img-tab"
+        width="145"
+        height="150"
+      >
+        <use href="./img/icons.svg#icon-btn_tab"></use>
       </svg>
     </button>
     <h1 class="title-hero">ANEMONE</h1>
