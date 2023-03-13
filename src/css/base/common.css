@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-  max-width: 288px;
+  min-width: 320px;
+  max-width: 480px;
 
   padding-left: 16px;
   padding-right: 16px;
@@ -19,13 +20,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
+
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1232px;
+    max-width: 1280px;
   }
 }
 
