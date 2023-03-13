@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/flower-shop/assets/index-37d3c868.js"></script>
-    <link rel="stylesheet" href="/flower-shop/assets/index-9c435f3c.css">
+    <link rel="stylesheet" href="/flower-shop/assets/index-cd42997b.css">
   </head>
   <body>
     <!-- Header section -->
@@ -104,23 +104,74 @@
   </div>
 </section>
 
-      <section class="about-section" id="">
+      <section class="section about-section" id="about">
   <div class="container">
-    <h2 class="uppertitle about-title">ABOUT</h2>
-    <p class="about-text">
-      We are a minimalistic flower studio. We love people and flowers.
-      Therefore, every day we give people the beauty and joy creating stylish
-      and modern masterpieces. Every bouquet we create is unique as you are.
-    </p>
-    <img
-      class="about-img"
-      srcset="../img/vite-logo.png"
-      sizes=""
-      src="../img/vite-logo.png"
-      alt="two pink flowers"
-      width="632"
-      loading="lazy"
-    />
+    <h2 class="section-title">ABOUT</h2>
+    <div class="about-box">
+      <p class="about-text">
+        We are a minimalistic flower studio. We love people and flowers.
+        Therefore, every day we give people the beauty and joy creating stylish
+        and modern masterpieces. Every bouquet we create is unique as you are.
+      </p>
+
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="/flower-shop/assets/image_about_desc1@1x-9a7150e1.webp 1x, /flower-shop/assets/image_about_desc1@2x-9126af13.webp 2x"
+          type="image/webp"
+        />
+        <!-- <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ../img/about/ 1x,
+                    ../img/about/ 2x
+                  "
+                  type="image/png"
+                /> -->
+
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/about/image_about_tab1@1x.webp  1x,
+            ./img/about/image_about_tabc1@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <!-- <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ../img/about/ 1x,
+                    ../img/about/ 2x
+                  "
+                  type="image/png"
+                /> -->
+
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/flower-shop/assets/image_about_mob1@1x-93e5970b.webp 1x, /flower-shop/assets/image_about_mob1@2x-b04d739b.webp 2x"
+          type="image/webp"
+        />
+        <!-- <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ../img/about/ 1x,
+                    ../img/about/ 2x
+                  "
+                  type="image/png"
+                /> -->
+        <img
+          class="about-img"
+          src="/flower-shop/assets/image_about_desc1@2x-9126af13.webp"
+          alt="bouquet "
+          width="632"
+          height="344"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
