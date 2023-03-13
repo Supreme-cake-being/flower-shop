@@ -7,6 +7,11 @@
 
     <title>Anemone</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
     <!-- slick styles -->
     <link
       rel="stylesheet"
@@ -21,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/flower-shop/assets/index-37d3c868.js"></script>
-    <link rel="stylesheet" href="/flower-shop/assets/index-4e7d50ba.css">
+    <link rel="stylesheet" href="/flower-shop/assets/index-c04f61b9.css">
   </head>
   <body>
     <!-- Header section -->
@@ -378,26 +383,69 @@
   </div>
 </section>
 
-      <section>
-  <h1>delivery</h1>
+      <section class="section">
+  <div class="container">
+    <h2 class="section-title">delivery</h2>
 
-  <ol>
-    <li>Choose your bouquet and make an order on website</li>
+    <ul class="delivery-list">
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Choose your bouquet and make an order on website
+        </p>
+      </li>
 
-    <li>
-      Wait for the call to clarify the details of the order. You can pay online
-      or to the courier
-    </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Wait for the call to clarify the details of the order. You can pay
+          online or to the courier
+        </p>
+      </li>
 
-    <li>
-      Wait for the delivery at the selected time or pick up the order from the
-      store
-    </li>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
+      </li>
 
-    <li>Make someone happy or enjoy yourself</li>
-  </ol>
+      <li class="delivery-list-item">
+        <p class="delivery-list-text">Make someone happy or enjoy yourself</p>
+      </li>
+    </ul>
+  </div>
 
-  <img src="" alt="bouquet photo" />
+  <picture class="delivery-img">
+    <!-- Desktop -->
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ../images/delivery/image-delivery_1280.webp 1x,
+        ../images/delivery/image-delivery_2560.webp 2x
+      "
+      type="image/webp"
+    />
+
+    <!-- Tablet -->
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ../images/delivery/image-delivery_768.webp  1x,
+        ../images/delivery/image-delivery_1536.webp 2x
+      "
+      type="image/webp"
+    />
+
+    <!-- Mobile -->
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ../images/delivery/image-delivery_320.webp 1x,
+        ../images/delivery/image-delivery_640.webp 2x
+      "
+      type="image/webp"
+    />
+    <img src="../images/image-delivery_320.webp" alt="bouquet photo" />
+  </picture>
 </section>
 
       <section class="blog section">
