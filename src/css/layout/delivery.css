@@ -122,7 +122,7 @@
 
     max-width: 1088px;
 
-    gap: 52px;
+    gap: 32px;
   }
 }
 
@@ -131,6 +131,12 @@
     font-size: 32px;
 
     margin-left: 120px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .delivery-list-item{
+    height: 84px;
   }
 }
 
