@@ -2,6 +2,11 @@
 .slick-slide {
   padding-right: 16px;
 }
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    padding-right: 31px;
+  }
+}
 
 .slick-arrow {
   font-size: 30px;
@@ -9,17 +14,40 @@
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 768px) {
+  .slick-arrow {
+    font-size: 40px;
+  }
+}
 
 .my-slick-prev {
   position: absolute;
   left: 28%;
   top: 109%;
 }
+@media screen and (min-width: 768px) {
+  .my-slick-prev {
+    left: 40%;
+    top: 105%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .my-slick-prev {
+    left: 44.5%;
+    top: 105%;
+  }
+}
 
 .my-slick-next {
   position: absolute;
   left: 53%;
   top: 109%;
+}
+@media screen and (min-width: 768px) {
+  .my-slick-next {
+    left: 51%;
+    top: 105%;
+  }
 }
 
 .blog-text {
@@ -35,4 +63,39 @@
   text-align: center;
   padding-bottom: 24px;
   margin-top: 68px;
+}
+@media screen and (min-width: 768px) {
+  .text-desc {
+    font-size: 32px;
+    padding-bottom: 32px;
+    margin-top: 87px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-desc {
+    margin-top: 103px;
+  }
+}
+
+.blog-list {
+  max-width: 288px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .blog-list {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog-list {
+    max-width: 1232px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .caption {
+    margin-bottom: 122px;
+  }
 }
