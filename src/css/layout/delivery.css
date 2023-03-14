@@ -6,7 +6,6 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
 }
 
 .delivery-list-item {
@@ -46,6 +45,7 @@
 }
 
 .delivery-bottom-img {
+  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
 
@@ -72,7 +72,6 @@
 @media screen and (min-width: 768px) {
   .delivery-list {
     gap: 24px;
-    margin-bottom: 40px;
   }
 }
 
@@ -101,6 +100,8 @@
 
 @media screen and (min-width: 768px) {
   .delivery-bottom-img {
+    margin-top: 40px;
+
     max-width: 768px;
     height: 264px;
     background-image: url(../../img/delivery/image-delivery_768.webp)
@@ -118,8 +119,6 @@
 /* DESKTOP */
 @media screen and (min-width: 1280px){
   .delivery-list{
-    margin-bottom: 60px;
-
     max-width: 1088px;
 
     gap: 32px;
@@ -142,6 +141,8 @@
 
 @media screen and (min-width: 1280px) {
   .delivery-bottom-img {
+    margin-top: 60px;
+
     max-width: 1280px;
     height: 391px;
     background-image: url(../../img/delivery/image-delivery_1280.webp)
