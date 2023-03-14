@@ -32,7 +32,7 @@
 }
 
 .store-img {
-    min-width: 136px;
+    min-width: 100%;
     height: 155px;
     margin-bottom: 12px;
 }
@@ -41,11 +41,17 @@
     margin-bottom: 6px;
     font-size: 16px;
     line-height: 1.25;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .store-img-cost {
     font-size: 12px;
     line-height: 1.25;
+    opacity: 0.6;
+    font-weight: 600;
 }
 
 .store-btn {
@@ -87,6 +93,15 @@
         margin-bottom: 8px;
         font-size: 32px;
         line-height: 1.22;
+        white-space: nowrap;
+    }
+    
+    .store-img-name::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        margin-left: 8px;
+        background-color: #000000;
     }
     
     .store-img-cost {
@@ -121,6 +136,10 @@
     }
     .store-img {
         margin-bottom: 12px;
+    }
+
+    .store-img-name::after {
+        margin-left: 16px;
     }
     
     .store-img-name {
