@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/flower-shop/assets/index-1aa0ae0a.js"></script>
-    <link rel="stylesheet" href="/flower-shop/assets/index-55d0c71c.css">
+    <link rel="stylesheet" href="/flower-shop/assets/index-1cdc7711.css">
   </head>
   <body>
     <!-- Header section -->
@@ -83,21 +83,57 @@
       studio
     </h2>
     <picture>
+      <!-- desktop -->
       <source
-        srcset="./img/hero/image_home page_mob@1x.webp 1x, ./img/hero/image_home page_mob@2x.webp 2x"
-        type="hero/webp"
+        media="(min-width:1280px)"
+        srcset="/flower-shop/assets/image_home_page_desk@1x-cfed9ef4.webp 1x, /flower-shop/assets/image_home_page_desk@2x-7262b8ec.webp 2x"
+        type="image/webp"
       />
-      <img
-        class="hero-img"
-        src="/flower-shop/assets/image_home page_mob@1x-3dedb453.webp"
-        alt="flower"
-        width="145"
-        loading="lazy"
+      <source
+        media="(min-width:1280px)"
+        srcset="/flower-shop/assets/image_home_page_desk@1x-da4b4213.jpg 1x, /flower-shop/assets/image_home_page_desk@2x-fd1ef346.jpg 2x"
+        type="image/jpg"
       />
+      <!-- tablet -->
+      <source
+        media="(min-width:768px)"
+        srcset="/flower-shop/assets/image_home_page_tab@1x-4ee6b548.webp 1x, /flower-shop/assets/image_home_page_tab@2x-c44b7c36.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="/flower-shop/assets/image_home_page_tab@1x-e09792a6.png 1x, /flower-shop/assets/image_home_page_tab@2x-96cd210d.png 2x"
+        type="image/png"
+      />
+      <!-- mobile -->
+      <source
+        media="(min-width:320px)"
+        srcset="/flower-shop/assets/image_home_page_mob@1x-3dedb453.webp 1x, /flower-shop/assets/image_home_page_mob@2x-974f17a8.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width:320px)"
+        srcset="/flower-shop/assets/image_home_page_mob@1x-8220af2e.png 1x, /flower-shop/assets/image_home_page_mob@2x-0a460a6f.png 2x"
+        type="image/png"
+      />
+      <img src="/flower-shop/assets/image_home_page_mob@1x-8220af2e.png" alt="flower" />
     </picture>
     <button class="button-hero">
-      <svg class="button-img" width="64" height="76">
+      <svg
+        media="max-width:767px"
+        class="button-img-mob"
+        width="64"
+        height="76"
+      >
         <use href="/flower-shop/assets/icons-accc9861.svg#icon-btn_mob"></use>
+      </svg>
+      <svg
+        media="min-width:768px"
+        class="button-img-tab"
+        width="145"
+        height="150"
+      >
+        <use href="/flower-shop/assets/icons-accc9861.svg#icon-btn_tab"></use>
       </svg>
     </button>
     <h1 class="title-hero">ANEMONE</h1>
