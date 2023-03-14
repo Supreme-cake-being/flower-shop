@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/flower-shop/assets/index-ab0d4531.js"></script>
-    <link rel="stylesheet" href="/flower-shop/assets/index-3dcdb269.css">
+    <link rel="stylesheet" href="/flower-shop/assets/index-9dcb9769.css">
   </head>
   <body>
     <!-- Header section -->
@@ -127,16 +127,22 @@
     </h2>
     <picture>
       <!-- desktop -->
-      <source
+      <!-- <source
         media="(min-width:1280px)"
-        srcset="/flower-shop/assets/image_home_page_desk@1x-cfed9ef4.webp 1x, /flower-shop/assets/image_home_page_desk@2x-7262b8ec.webp 2x"
+        srcset="
+          ./img/hero/image_home_page_desk@1x.webp 1x,
+          ./img/hero/image_home_page_desk@2x.webp 2x
+        "
         type="image/webp"
-      />
-      <source
+      /> -->
+      <!-- <source
         media="(min-width:1280px)"
-        srcset="/flower-shop/assets/image_home_page_desk@1x-da4b4213.jpg 1x, /flower-shop/assets/image_home_page_desk@2x-fd1ef346.jpg 2x"
+        srcset="
+          ./img/hero/image_home_page_desk@1x.jpg 1x,
+          ./img/hero/image_home_page_desk@2x.jpg 2x
+        "
         type="image/jpg"
-      />
+      /> -->
       <!-- tablet -->
       <source
         media="(min-width:768px)"
@@ -178,8 +184,16 @@
       >
         <use href="/flower-shop/assets/icons-ac3c727b.svg#icon-btn_tab"></use>
       </svg>
+      <svg
+        media="min-width:1280px"
+        class="button-img-desk"
+        width="166"
+        height="166"
+      >
+        <use href="/flower-shop/assets/icons-ac3c727b.svg#icon-btn_desk"></use>
+      </svg>
     </button>
-    <h1 class="title-hero">ANEMONE</h1>
+    <h1 class="title-hero">ANEMON<span class="underline">E</span></h1>
   </div>
 </section>
 
