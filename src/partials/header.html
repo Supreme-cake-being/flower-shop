@@ -13,30 +13,39 @@
             <a class="top-nav-link" href="./index.html">Anemone</a>
           </li>
           <li class="top-nav-item">
-            <a class="top-nav-link" href="">About us</a>
+            <a class="top-nav-link" href="#about">About us</a>
           </li>
           <li class="top-nav-item">
-            <a class="top-nav-link" href="">Store</a>
+            <a class="top-nav-link" href="#store">Store</a>
           </li>
           <li class="top-nav-item">
-            <a class="top-nav-link" href="">Delivery</a>
+            <a class="top-nav-link" href="#delivery">Delivery</a>
           </li>
           <li class="top-nav-item">
-            <a class="top-nav-link" href="">Blog</a>
+            <a class="top-nav-link" href="#blog">Blog</a>
           </li>
         </ul>
       </nav>
       <div class="button-wrapper">
         <button type="button" class="call-btn">
-          <a href="tel:+380631234567" target="_blank" class="contact-phone">
-            <svg class="call-btn-icon" width="24" height="24">
-              <use href="../img/icons.svg#icon-tel_mob"></use>
-            </svg>
-          </a>
+          <!-- <a
+          href="tel:+380631234567"
+          target="_blank"
+          class="contact-phone"
+          class="call-link"
+        > -->
+          <svg class="call-btn-icon" width="24" height="24">
+            <use href="../img/icons.svg#icon-tel_mob"></use>
+          </svg>
+          <!-- </a> -->
         </button>
         <!-- Mobile menu btn -->
-        <button class="header-menu-btn js-open-menu" type="button" aria-expanded="false"
-              aria-controls="mobile-menu">
+        <button
+          class="header-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-menu-icon" width="24" height="24">
             <use href="../img/icons.svg#icon-btn-burger_mob"></use>
           </svg>
@@ -50,26 +59,28 @@
 <!-- Mobile menu -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button type="button" class="close-menu-btn js-close-menu" data-modal-close>
-    <svg class="close-btn-icon" width="8" height="8">
-      <use href=""></use>
-    </svg>
-  </button>
-  <ul class="mobile-menu">
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="./index.html">Anemone</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">About us</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Store</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Delivery</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Blog</a>
-    </li>
-  </ul>
+  <div class="container">
+    <button type="button" class="close-menu-btn js-close-menu" data-modal-close>
+      <svg class="close-btn-icon" width="24" height="24">
+        <use href="../img/icons.svg#icon-btn-burger_close_mob"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./index.html">Anemone</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Store</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Delivery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Blog</a>
+      </li>
+    </ul>
+  </div>
 </div>

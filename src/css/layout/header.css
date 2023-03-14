@@ -1,3 +1,7 @@
+.header {
+  padding-top: 16px;
+}
+
 /* Mobole menu button */
 
 .header-menu-btn,
@@ -5,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
+    height: 24px;
 
     border: none;
     background-color: transparent;
@@ -41,9 +47,12 @@
     top: 16px;
     right: 16px;
 
+    padding: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 }
 
 .mobile-menu {
@@ -61,18 +70,20 @@
 .mobile-menu-item {
     display: flex;
     justify-content: center;
+    color: var(--footer-text-color);
+    font-size: 20px;
+    line-height: calc(24 / 20);
 }
-
-
 
 /* ============================== */
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
  }
 
-/* Nav */
+/* Tpo-Nav */
 
 .top-nav {
     display: none;
@@ -81,7 +92,19 @@
 @media screen and (min-width: 768px) {
     .top-nav {
         display: flex;
+        gap: 24px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+  .top-nav {
+    gap: 48px;
+  }
+}
+
+.top-nav-item {
+  font-size: 20px;
+  line-height: calc(24 / 20);
 }
 
 /* ============================ */
