@@ -63,9 +63,15 @@ body {
 @media screen and (min-width: 768px) {
   .section-title{
     font-size: 44px;
-    line-height: 1;
+    line-height: 1.23;
 
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title::after {
+    margin-left: 16px;
   }
 }
 
