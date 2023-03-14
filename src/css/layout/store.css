@@ -28,15 +28,9 @@
 }
 
 .store-item {
-    width: calc((100% - 16px) / 2);
-    min-width: fit-content;
+    width: calc((100% - 32px) / 2);
 }
 
-.store-header {
-    font-size: 24px;
-    line-height: 1.21;
-    margin-bottom: 32px;
-}
 .store-img {
     min-width: 136px;
     height: 155px;
@@ -55,6 +49,10 @@
 }
 
 .store-btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -68,10 +66,11 @@
 
     .store-list {
         row-gap: 40px;
+        margin-bottom: 60px;
     }
 
     .store-item {
-        width: calc((100% - 32px) / 2);
+        width: calc((100% - 64px) / 2);
     }
 
     .store-header {
@@ -93,6 +92,13 @@
     .store-img-cost {
         font-size: 24px;
         line-height: 1.21;
+    }
+
+    .store-btn {
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
