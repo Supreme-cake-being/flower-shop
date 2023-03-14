@@ -18,21 +18,6 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
 .section {
   padding-bottom: 60px;
 }
@@ -55,4 +40,35 @@ body {
   height: 1px;
   margin-left: 14px;
   background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .section {
+    padding-bottom: 100px;
+  }
+
+  .section-title {
+    margin-bottom: 60px;
+
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+  }
+
+  .section-title::after {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
