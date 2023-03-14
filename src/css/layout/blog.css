@@ -22,31 +22,30 @@
 
 .my-slick-prev {
   position: absolute;
-  left: 28%;
-  top: 109%;
+  left: 25%;
+  top: 97%;
 }
 @media screen and (min-width: 768px) {
   .my-slick-prev {
-    left: 40%;
-    top: 105%;
+    left: 38.5%;
+    top: 102%;
   }
 }
 @media screen and (min-width: 1280px) {
   .my-slick-prev {
-    left: 44.5%;
-    top: 105%;
+    left: 43.5%;
   }
 }
 
 .my-slick-next {
   position: absolute;
-  left: 53%;
-  top: 109%;
+  left: 50.5%;
+  top: 97%;
 }
 @media screen and (min-width: 768px) {
   .my-slick-next {
     left: 51%;
-    top: 105%;
+    top: 102%;
   }
 }
 
@@ -88,7 +87,7 @@
     max-width: 720px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .blog-list {
     max-width: 1232px;
   }
@@ -97,5 +96,23 @@
 @media screen and (min-width: 1280px) {
   .caption {
     margin-bottom: 122px;
+  }
+}
+
+.arrow-left-icon {
+  padding: 0 5px;
+}
+@media screen and (min-width: 768px) {
+  .arrow-left-icon {
+    padding: 0;
+  }
+}
+
+.arrow-right-icon {
+  padding: 0 5px;
+}
+@media screen and (min-width: 768px) {
+  .arrow-right-icon {
+    padding: 0;
   }
 }
