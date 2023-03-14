@@ -1,4 +1,8 @@
 /* MOBILE */
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
   font-family: 'Inter', sans-serif;
 }
@@ -55,13 +59,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .section{
+  .section {
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section-title{
+  .section-title {
     font-size: 44px;
     line-height: 1.23;
 
@@ -84,7 +88,7 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .section-title{
+  .section-title {
     margin-bottom: 80px;
   }
 }
