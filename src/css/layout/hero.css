@@ -4,7 +4,8 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding-bottom: 136px;
+  padding-bottom: 30px;
+  padding-top: 43.67px;
 }
 
 .button-hero {
@@ -44,12 +45,15 @@
   text-align: center;
   font-weight: 400;
   position: absolute;
-  top: 46%;
+  top: 450px;
   margin-left: 16px;
   margin-right: 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .button-img-tab {
+    display: none;
+  }
+  .button-img-desk {
     display: none;
   }
 }
@@ -64,9 +68,44 @@
   }
   .title-hero {
     font-size: 120px;
-    top: 82%;
+    top: 778px;
   }
   .button-hero {
     margin-left: 20px;
+  }
+  .hero-container {
+    padding-top: 37.6px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .button-img-desk {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-img-tab {
+    display: none;
+  }
+  .button-hero {
+    margin-left: 120px;
+  }
+  .subtitle-hero {
+    margin-right: 120px;
+    font-size: 32px;
+  }
+  .title-hero {
+    font-size: 160px;
+    top: 740px;
+    margin: 0;
+  }
+  .underline::before {
+    content: '';
+    border: 8px solid #0e0e0e;
+    position: absolute;
+    width: 58px;
+    left: 725px;
+  }
+  .hero-container {
+    padding-top: 63.6px;
   }
 }
