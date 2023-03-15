@@ -35,7 +35,7 @@
 
     
     <script type="module" crossorigin src="/flower-shop/assets/index-74cd5891.js"></script>
-    <link rel="stylesheet" href="/flower-shop/assets/index-6de3e18d.css">
+    <link rel="stylesheet" href="/flower-shop/assets/index-d2910063.css">
   </head>
   <body>
     <!-- Header section -->
@@ -44,7 +44,7 @@
     <div class="header-wrapper">
       <a href="../index.html" class="logo">
         <svg class="logo-icon">
-          <use href="/flower-shop/assets/icons-e1837879.svg#icon-logo"></use>
+          <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-logo"></use>
         </svg>
       </a>
       <nav>
@@ -69,7 +69,7 @@
       <div class="button-wrapper">
         <a href="tel:+380631234567" target="_blank" class="contact-phone">
           <svg class="call-btn-icon">
-            <use href="/flower-shop/assets/icons-e1837879.svg#icon-tel_mob"></use>
+            <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-tel_mob"></use>
           </svg>
         </a>
         <!-- Mobile menu btn -->
@@ -80,7 +80,7 @@
           aria-controls="mobile-menu"
         >
           <svg class="header-menu-icon" width="18" height="16">
-            <use href="/flower-shop/assets/icons-e1837879.svg#icon-btn-burger_mob"></use>
+            <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-btn-burger_mob"></use>
           </svg>
         </button>
         <!-- End mobile menu btn -->
@@ -95,7 +95,7 @@
   <div class="container">
     <button type="button" class="close-menu-btn js-close-menu" data-modal-close>
       <svg class="close-btn-icon" width="24" height="24">
-        <use href="/flower-shop/assets/icons-e1837879.svg#icon-btn-burger_close_mob"></use>
+        <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-btn-burger_close_mob"></use>
       </svg>
     </button>
     <ul class="mobile-menu">
@@ -120,82 +120,50 @@
 
 
     <main>
-      <!--hero section-->
-<section class="hero-section" id="hero">
-  <div class="hero-container container">
-    <h2 class="subtitle-hero">
-      flower <br />
-      studio
-    </h2>
+      <section class="hero" id="anemon">
+  <div class="hero-container">
+    <h1 class="hero-title">ANEMONE</h1>
+    <p class="hero-badge">flower studio</p>
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
+      <svg class="btn-text-mobil" width="76" height="76">
+        <use id="btn-txt" href="/flower-shop/assets/icons-5c379ee3.svg#icon-btn_mob"></use>
+      </svg>
+
+      <svg class="btn-text-tabl" width="145" height="150">
+        <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-btn_tab"></use>
+      </svg>
+
+      <svg class="hero-btn-svg">
+        <use class="btn-text" href="/flower-shop/assets/icons-5c379ee3.svg#icon-shop-now"></use>
+        <use class="btn-arrow" href="/flower-shop/assets/icons-5c379ee3.svg#icon-shop-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-shape">
     <picture>
       <!-- desktop -->
-      <!-- <source
+      <source
+        class="hero-img"
         media="(min-width:1280px)"
-        srcset="
-          ./img/hero/image_home_page_desk@1x.webp 1x,
-          ./img/hero/image_home_page_desk@2x.webp 2x
-        "
-        type="image/webp"
-      /> -->
-      <!-- <source
-        media="(min-width:1280px)"
-        srcset="
-          ./img/hero/image_home_page_desk@1x.jpg 1x,
-          ./img/hero/image_home_page_desk@2x.jpg 2x
-        "
+        srcset="/flower-shop/assets/image_home_page_desk@1x-da4b4213.jpg 1x, /flower-shop/assets/image_home_page_desk@2x-fd1ef346.jpg 2x"
         type="image/jpg"
-      /> -->
+      />
       <!-- tablet -->
       <source
-        media="(min-width:768px)"
-        srcset="/flower-shop/assets/image_home_page_tab@1x-4ee6b548.webp 1x, /flower-shop/assets/image_home_page_tab@2x-c44b7c36.webp 2x"
-        type="image/webp"
-      />
-      <source
+        class="hero-img"
         media="(min-width:768px)"
         srcset="/flower-shop/assets/image_home_page_tab@1x-e09792a6.png 1x, /flower-shop/assets/image_home_page_tab@2x-96cd210d.png 2x"
         type="image/png"
       />
       <!-- mobile -->
       <source
-        media="(min-width:320px)"
-        srcset="/flower-shop/assets/image_home_page_mob@1x-3dedb453.webp 1x, /flower-shop/assets/image_home_page_mob@2x-974f17a8.webp 2x"
-        type="image/webp"
-      />
-      <source
+        class="hero-img"
         media="(min-width:320px)"
         srcset="/flower-shop/assets/image_home_page_mob@1x-8220af2e.png 1x, /flower-shop/assets/image_home_page_mob@2x-0a460a6f.png 2x"
         type="image/png"
       />
       <img src="/flower-shop/assets/image_home_page_mob@1x-8220af2e.png" alt="flower" />
     </picture>
-    <button class="button-hero js-open-modal" type="button" data-modal="1">
-      <svg
-        media="max-width:767px"
-        class="button-img-mob"
-        width="64"
-        height="76"
-      >
-        <use href="/flower-shop/assets/icons-e1837879.svg#icon-btn_mob"></use>
-      </svg>
-      <svg
-        media="min-width:768px"
-        class="button-img-tab"
-        width="145"
-        height="150"
-      >
-        <use href="/flower-shop/assets/icons-e1837879.svg#icon-btn_tab"></use>
-      </svg>
-      <svg
-        media="min-width:1280px"
-        class="button-img-desk"
-        width="166"
-        height="166"
-      >
-        <use href="/flower-shop/assets/icons-e1837879.svg#icon-btn_desk"></use>
-      </svg>
-    </button>
-    <h1 class="title-hero">ANEMON<span class="underline">E</span></h1>
   </div>
 </section>
 
@@ -820,7 +788,7 @@
     <div class="footer-item-logo">
       <a href="../index.html" class="footer-logo">
         <svg class="logo-icon">
-          <use href="/flower-shop/assets/icons-e1837879.svg#icon-logo"></use>
+          <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-logo"></use>
         </svg>
       </a>
     </div>
@@ -877,14 +845,14 @@
       <li class="social-item">
         <a href="#" class="footer-social">
           <svg class="footer-social-icon" width="28" height="28">
-            <use href="/flower-shop/assets/icons-e1837879.svg#icon-facebook"></use>
+            <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social-item">
         <a href="#" class="footer-social">
           <svg class="footer-social-icon" width="28" height="28">
-            <use href="/flower-shop/assets/icons-e1837879.svg#icon-instagram"></use>
+            <use href="/flower-shop/assets/icons-5c379ee3.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
