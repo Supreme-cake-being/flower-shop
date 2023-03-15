@@ -116,3 +116,12 @@
     padding: 0;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .blog_btn {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
