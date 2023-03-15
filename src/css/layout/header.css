@@ -5,13 +5,17 @@
 .contact-phone{
     width: 22px;
     height: 22px;
-    margin-left: 22px;
 }
 
 @media screen and (min-width: 768px) {
     .contact-phone{
         width: 24px;
         height: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-phone{
         margin-left: 48px;
     }
 }
