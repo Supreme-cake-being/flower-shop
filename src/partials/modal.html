@@ -10,52 +10,49 @@
     back.
   </p>
   <form class="modal-contactus-form modal-form">
-    <label class="modal-contactus-label modal-label" for="name"
-      ><span class="modal-label-span">Name</span>
-      <input
-        id="modal-name"
-        class="modal-contactus-input modal-input"
-        type="text"
-        placeholder="Your name"
-        pattern="[a-z0-9]+[A-Z]"
-        id="name"
-      />
-      <svg class="modal-input-icon" width="20" height="20">
-        <use
-          class="modal-input-icon-valid"
-          href="../img/icons.svg#icon-modal-valid"
-        ></use>
-        <use
-          class="modal-input-icon-invalid"
-          href="../img/icons.svg#icon-modal-invalid"
-        ></use>
-      </svg>
+    <label class="modal-contactus-label modal-label" for="name">
+      <div class="reverse">
+        <input
+          id="modal-name"
+          class="modal-contactus-input modal-input"
+          type="text"
+          placeholder="Your name"
+          pattern="[a-z0-9]{1,15}"
+          id="name"
+        />
+        <span class="modal-label-span">Name</span>
+
+        <svg class="modal-input-icon-valid" width="20" height="20">
+          <use href="../img/icons.svg#icon-modal-valid"></use>
+        </svg>
+        <svg class="modal-input-icon-invalid" width="20" height="20">
+          <use href="../img/icons.svg#icon-modal-invalid"></use>
+        </svg>
+      </div>
     </label>
-    <label class="modal-contactus-label modal-label" for="email"
-      ><span class="modal-label-span">Email</span>
-      <input
-        id="modal-mail"
-        class="modal-contactus-input modal-input"
-        placeholder="Your email"
-        type="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        id="email"
-      />
-      <svg class="modal-input-icon" width="20" height="20">
-        <use
-          class="modal-input-icon-valid"
-          href="../img/icons.svg#icon-modal-valid"
-        ></use>
-        <use
-          class="modal-input-icon-invalid"
-          href="../img/icons.svg#icon-modal-invalid"
-        ></use>
-      </svg>
+    <label class="modal-contactus-label modal-label" for="email">
+      <div class="reverse">
+        <input
+          id="modal-mail"
+          class="modal-contactus-input modal-input"
+          placeholder="Your email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          id="email"
+        />
+        <span class="modal-label-span">Email</span>
+        <svg class="modal-input-icon-valid" width="20" height="20">
+          <use href="../img/icons.svg#icon-modal-valid"></use>
+        </svg>
+        <svg class="modal-input-icon-invalid" width="20" height="20">
+          <use href="../img/icons.svg#icon-modal-invalid"></use>
+        </svg>
+      </div>
     </label>
     <button
       id="modal-submit"
       disabled="disabled"
-      class="modal-contactus-btn modal-btn btn js-modal-close js-open-modal"
+      class="modal-contactus-btn modal-btn btn js-open-modal js-modal-close"
       data-modal="3"
       type="submit"
     >
@@ -65,7 +62,9 @@
 </div>
 
 <!-- modal thank you -->
+
 <div class="modal-thankyou modal" data-modal="3">
+  <div class="overlay js-overlay-modal"></div>
   <svg class="modal-contactus-close modal-close js-modal-close">
     <use href="../img/icons.svg#icon-close-big"></use>
   </svg>
@@ -95,14 +94,23 @@
     </p>
     <form class="modal-subscribe-form modal-form">
       <label class="modal-subscribe-label modal-label" for="subscribe-email"
-        ><span class="modal-label-span">Email</span>
-        <input
-          class="modal-subscribe-input modal-input"
-          type="email"
-          placeholder="Your email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          id="subscribe-email"
-      /></label>
+        ><div class="reverse">
+          <input
+            id="modal-mail"
+            class="modal-contactus-input modal-input"
+            placeholder="Your email"
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            id="email"
+          />
+          <span class="modal-label-span">Email</span>
+          <svg class="modal-input-icon-valid" width="20" height="20">
+            <use href="../img/icons.svg#icon-modal-valid"></use>
+          </svg>
+          <svg class="modal-input-icon-invalid" width="20" height="20">
+            <use href="../img/icons.svg#icon-modal-invalid"></use>
+          </svg></div
+      ></label>
 
       <button class="modal-subscribe-btn modal-btn btn" type="submit">
         Subscribe
