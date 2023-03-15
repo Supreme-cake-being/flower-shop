@@ -10,22 +10,51 @@
     back.
   </p>
   <form class="modal-contactus-form modal-form">
-    <label class="modal-contactus-label modal-label" for="name">Name</label>
-    <input
-      class="modal-contactus-input modal-input"
-      type="text"
-      placeholder="Kristin Watson"
-      id="name"
-    />
-    <label class="modal-contactus-label modal-label" for="email">Email</label>
-    <input
-      class="modal-contactus-input modal-input"
-      placeholder="tanya.hill@example.com"
-      type="email"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-      id="email"
-    />
+    <label class="modal-contactus-label modal-label" for="name"
+      ><span class="modal-label-span">Name</span>
+      <input
+        id="modal-name"
+        class="modal-contactus-input modal-input"
+        type="text"
+        placeholder="Your name"
+        pattern="[a-z0-9]+[A-Z]"
+        id="name"
+      />
+      <svg class="modal-input-icon" width="20" height="20">
+        <use
+          class="modal-input-icon-valid"
+          href="../img/icons.svg#icon-modal-valid"
+        ></use>
+        <use
+          class="modal-input-icon-invalid"
+          href="../img/icons.svg#icon-modal-invalid"
+        ></use>
+      </svg>
+    </label>
+    <label class="modal-contactus-label modal-label" for="email"
+      ><span class="modal-label-span">Email</span>
+      <input
+        id="modal-mail"
+        class="modal-contactus-input modal-input"
+        placeholder="Your email"
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        id="email"
+      />
+      <svg class="modal-input-icon" width="20" height="20">
+        <use
+          class="modal-input-icon-valid"
+          href="../img/icons.svg#icon-modal-valid"
+        ></use>
+        <use
+          class="modal-input-icon-invalid"
+          href="../img/icons.svg#icon-modal-invalid"
+        ></use>
+      </svg>
+    </label>
     <button
+      id="modal-submit"
+      disabled="disabled"
       class="modal-contactus-btn modal-btn btn js-modal-close js-open-modal"
       data-modal="3"
       type="submit"
@@ -40,7 +69,7 @@
   <svg class="modal-contactus-close modal-close js-modal-close">
     <use href="../img/icons.svg#icon-close-big"></use>
   </svg>
-  <img class="modal-thankyou-img" src="" alt="" width="188" height="142" />
+  <img class="modal-thankyou-img" src="../img/modal/Plants.svg" alt="" />
   <strong class="modal-thankyou-title modal-title">Thank You!</strong>
   <p class="modal-thankyou-desc modal-desc">
     We have received your contact details and will reach you soon.
@@ -66,15 +95,15 @@
     </p>
     <form class="modal-subscribe-form modal-form">
       <label class="modal-subscribe-label modal-label" for="subscribe-email"
-        >Email</label
-      >
-      <input
-        class="modal-subscribe-input modal-input"
-        type="email"
-        placeholder="Your email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        id="subscribe-email"
-      />
+        ><span class="modal-label-span">Email</span>
+        <input
+          class="modal-subscribe-input modal-input"
+          type="email"
+          placeholder="Your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          id="subscribe-email"
+      /></label>
+
       <button class="modal-subscribe-btn modal-btn btn" type="submit">
         Subscribe
       </button>
