@@ -60,8 +60,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .delivery-bottom-img {
     background-image: url(../../img/delivery/image-delivery_640.webp);
   }
@@ -104,12 +104,12 @@
 
     max-width: 768px;
     height: 264px;
-    background-image: url(../../img/delivery/image-delivery_768.webp)
+    background-image: url(../../img/delivery/image-delivery_768.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .delivery-bottom-img {
       background-image: url(../../img/delivery/image-delivery_1536.webp);
     }
@@ -117,24 +117,24 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1280px){
-  .delivery-list{
+@media screen and (min-width: 1280px) {
+  .delivery-list {
     max-width: 1088px;
 
     gap: 32px;
   }
 }
 
-@media screen and (min-width: 1280px){
-  .delivery-list-text{
+@media screen and (min-width: 1280px) {
+  .delivery-list-text {
     font-size: 32px;
 
     margin-left: 120px;
   }
 }
 
-@media screen and (min-width: 1280px){
-  .delivery-list-item{
+@media screen and (min-width: 1280px) {
+  .delivery-list-item {
     height: 84px;
   }
 }
@@ -145,12 +145,12 @@
 
     max-width: 1280px;
     height: 391px;
-    background-image: url(../../img/delivery/image-delivery_1280.webp)
+    background-image: url(../../img/delivery/image-delivery_1280.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .delivery-bottom-img {
       background-image: url(../../img/delivery/image-delivery_2560.webp);
     }
