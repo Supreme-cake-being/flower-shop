@@ -4,10 +4,12 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
   padding-top: 43.67px;
 }
-
+.hero-container {
+  position: relative;
+}
 .button-hero {
   margin: 0;
   padding: 0;
@@ -45,7 +47,7 @@
   text-align: center;
   font-weight: 400;
   position: absolute;
-  top: 450px;
+  top: 290px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -68,13 +70,14 @@
   }
   .title-hero {
     font-size: 120px;
-    top: 778px;
+    top: 600px;
   }
   .button-hero {
     margin-left: 20px;
   }
   .hero-container {
     padding-top: 37.6px;
+    padding-bottom: 93px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -95,7 +98,7 @@
   }
   .title-hero {
     font-size: 160px;
-    top: 740px;
+    top: 600px;
     margin: 0;
   }
   .underline::before {
