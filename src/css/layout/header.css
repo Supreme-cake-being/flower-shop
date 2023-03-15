@@ -1,5 +1,22 @@
 .header {
-  padding-top: 16px;
+    padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        position: absolute;
+        z-index: 100;
+        top: 28px;
+        width: 100%;
+
+        padding-top: 28px;
+    }
 }
 
 .contact-phone{
@@ -11,6 +28,12 @@
     .contact-phone{
         width: 24px;
         height: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-phone{
+        margin-left: 48px;
     }
 }
 
