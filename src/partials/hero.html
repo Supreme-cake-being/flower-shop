@@ -1,38 +1,37 @@
-<!--hero section-->
-<section class="hero-section" id="hero">
-  <div class="hero-container container">
-    <h2 class="subtitle-hero">
-      flower <br />
-      studio
-    </h2>
+<section class="hero" id="anemon">
+  <div class="hero-container">
+    <h1 class="hero-title">ANEMONE</h1>
+    <p class="hero-badge">flower studio</p>
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
+      <svg class="btn-text-mobil" width="76" height="76">
+        <use id="btn-txt" href="./img/icons.svg#icon-btn_mob"></use>
+      </svg>
+
+      <svg class="btn-text-tabl" width="145" height="150">
+        <use href="./img/icons.svg#icon-btn_tab"></use>
+      </svg>
+
+      <svg class="hero-btn-svg">
+        <use class="btn-text" href="./img/icons.svg#icon-shop-now"></use>
+        <use class="btn-arrow" href="./img/icons.svg#icon-shop-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-shape">
     <picture>
       <!-- desktop -->
-      <!-- <source
-        media="(min-width:1280px)"
-        srcset="
-          ./img/hero/image_home_page_desk@1x.webp 1x,
-          ./img/hero/image_home_page_desk@2x.webp 2x
-        "
-        type="image/webp"
-      /> -->
-      <!-- <source
+      <source
+        class="hero-img"
         media="(min-width:1280px)"
         srcset="
           ./img/hero/image_home_page_desk@1x.jpg 1x,
           ./img/hero/image_home_page_desk@2x.jpg 2x
         "
         type="image/jpg"
-      /> -->
+      />
       <!-- tablet -->
       <source
-        media="(min-width:768px)"
-        srcset="
-          ./img/hero/image_home_page_tab@1x.webp 1x,
-          ./img/hero/image_home_page_tab@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
+        class="hero-img"
         media="(min-width:768px)"
         srcset="
           ./img/hero/image_home_page_tab@1x.png 1x,
@@ -42,14 +41,7 @@
       />
       <!-- mobile -->
       <source
-        media="(min-width:320px)"
-        srcset="
-          ./img/hero/image_home_page_mob@1x.webp 1x,
-          ./img/hero/image_home_page_mob@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
+        class="hero-img"
         media="(min-width:320px)"
         srcset="
           ./img/hero/image_home_page_mob@1x.png 1x,
@@ -59,32 +51,5 @@
       />
       <img src="./img/hero/image_home_page_mob@1x.png" alt="flower" />
     </picture>
-    <button class="button-hero js-open-modal" type="button" data-modal="1">
-      <svg
-        media="max-width:767px"
-        class="button-img-mob"
-        width="64"
-        height="76"
-      >
-        <use href="./img/icons.svg#icon-btn_mob"></use>
-      </svg>
-      <svg
-        media="min-width:768px"
-        class="button-img-tab"
-        width="145"
-        height="150"
-      >
-        <use href="./img/icons.svg#icon-btn_tab"></use>
-      </svg>
-      <svg
-        media="min-width:1280px"
-        class="button-img-desk"
-        width="166"
-        height="166"
-      >
-        <use href="./img/icons.svg#icon-btn_desk"></use>
-      </svg>
-    </button>
-    <h1 class="title-hero">ANEMON<span class="underline">E</span></h1>
   </div>
 </section>
