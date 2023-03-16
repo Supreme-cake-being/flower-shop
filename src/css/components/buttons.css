@@ -107,6 +107,7 @@
   
   .modal-btn:focus {
     background-color: var(--focus-button-color);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
   }
   
   .modal-contactus-btn {
