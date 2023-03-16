@@ -1,0 +1,129 @@
+.store-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.store-item {
+    width: calc((100% - 32px) / 2);
+}
+
+.store-img {
+    min-width: 100%;
+    min-height: 100%;
+    margin-bottom: 12px;
+}
+
+.store-img-name {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.store-img-cost {
+    font-size: 12px;
+    line-height: 1.25;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.store-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .store-img {
+        width: 344px;
+        height: 399px;
+    }
+
+    .store-list {
+        row-gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .store-item {
+        width: calc((100% - 64px) / 2);
+    }
+
+    .store-header {
+        font-size: 44px;
+        line-height: 1.23;
+        margin-bottom: 60px;
+    }
+    
+    .store-img {
+        margin-bottom: 16px;
+    }
+    
+    .store-img-name {
+        margin-bottom: 8px;
+        font-size: 32px;
+        line-height: 1.22;
+        white-space: nowrap;
+    }
+    
+    .store-img-name::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        margin-left: 8px;
+        background-color: #000000;
+    }
+    
+    .store-img-cost {
+        font-size: 24px;
+        line-height: 1.21;
+    }
+
+    .store-btn {
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .store-img {
+        width: 600px;
+        height: 542px;
+    }
+
+    .store-list {
+        row-gap: 64px;
+    }
+
+    .store-item {
+        width: calc((100% - 32px) / 2);
+    }
+    
+    .store-header {
+        margin-bottom: 80px;
+    }
+    .store-img {
+        margin-bottom: 12px;
+    }
+
+    .store-img-name::after {
+        margin-left: 16px;
+    }
+    
+    .store-img-name {
+        margin-bottom: 4px;
+        font-size: 36px;
+    }
+    
+    .store-img-cost {
+        font-size: 28px;
+    }
+}
