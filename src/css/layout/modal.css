@@ -51,7 +51,7 @@
   visibility: visible;
 
   animation: fadeIn;
-  animation-duration:500ms;
+  animation-duration: 500ms;
 }
 
 .overlay.active {
@@ -84,7 +84,8 @@
   }
 }
 
-.modal-subscribe {}
+.modal-subscribe {
+}
 
 @media screen and (min-width: 768px) {
   .modal-subscribe {
@@ -108,6 +109,13 @@
     width: 16px;
     height: 16px;
   }
+}
+.modal-close:hover,
+.modal-close:focus {
+  animation: pulse;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  cursor: pointer;
 }
 
 .modal-title {
@@ -154,7 +162,8 @@
   }
 }
 
-.modal-contactus-desc {}
+.modal-contactus-desc {
+}
 
 .modal-subscribe-desc {
   font-weight: 400;
@@ -171,7 +180,8 @@
   }
 }
 
-.modal-thankyou-desc {}
+.modal-thankyou-desc {
+}
 
 .modal-form {
   width: 100%;
@@ -247,11 +257,11 @@
   border: 1px solid #3cbc81;
 }
 
-.modal-input:not(:placeholder-shown):valid+.modal-label-span {
+.modal-input:not(:placeholder-shown):valid + .modal-label-span {
   color: #3cbc81;
 }
 
-.modal-input:not(:placeholder-shown):invalid+.modal-label-span {
+.modal-input:not(:placeholder-shown):invalid + .modal-label-span {
   color: #e74a3b;
 }
 
@@ -259,11 +269,11 @@
   border: 1px solid #e74a3b;
 }
 
-.modal-input:not(:placeholder-shown):invalid~.modal-input-icon-invalid {
+.modal-input:not(:placeholder-shown):invalid ~ .modal-input-icon-invalid {
   opacity: 1;
 }
 
-.modal-input:not(:placeholder-shown):valid~.modal-input-icon-valid {
+.modal-input:not(:placeholder-shown):valid ~ .modal-input-icon-valid {
   opacity: 1;
 }
 
@@ -323,8 +333,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .modal-subscribe-side-left {
     background-image: url(../../img/modal/img_mob_@2x.jpg);
     background-position: center;
@@ -339,8 +349,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-subscribe-side-left {
       background-image: url(../../img/modal/img_tab_@2x.jpg);
       background-position: center;
@@ -364,8 +374,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-subscribe-side-left {
       background-image: url(../../img/modal/img_desc_@2x.jpg);
       background-position: center;
