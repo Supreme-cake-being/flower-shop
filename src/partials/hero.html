@@ -1,8 +1,55 @@
-<!--hero section-->
-<section class="hero-section">
+<section class="hero" id="hero">
   <div class="hero-container">
-    <h3 class="subtitle-hero">flower studio</h3>
-    <button class="buttin-hero">now shop</button>
-    <h1 class="title-hero">ANEMONE</h1>
+    <h1 class="hero-title">ANEMONE</h1>
+    <h2 class="subtitle-hero">flower studio</h2>
+    <button class="hero-btn js-open-modal" type="button" data-modal="1">
+      <svg class="btn-text-mobil" width="76" height="76">
+        <use id="btn-txt" href="./img/icons.svg#icon-btn_mob"></use>
+      </svg>
+
+      <svg class="btn-text-tabl" width="145" height="150">
+        <use href="./img/icons.svg#icon-btn_tab"></use>
+      </svg>
+
+      <svg class="hero-btn-svg">
+        <use class="btn-text" href="./img/icons.svg#icon-shop-now"></use>
+        <use class="btn-arrow" href="./img/icons.svg#icon-shop-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-shape">
+    <picture>
+      <!-- desktop -->
+      <source
+        class="hero-img"
+        media="(min-width:1280px)"
+        srcset="
+          ./img/hero/image_home_page_desk@1x.jpg 1x,
+          ./img/hero/image_home_page_desk@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- tablet -->
+      <source
+        class="hero-img"
+        media="(min-width:768px)"
+        srcset="
+          ./img/hero/image_home_page_tab@1x.png 1x,
+          ./img/hero/image_home_page_tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- mobile -->
+      <source
+        class="hero-img"
+        media="(min-width:320px)"
+        srcset="
+          ./img/hero/image_home_page_mob@1x.png 1x,
+          ./img/hero/image_home_page_mob@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="./img/hero/image_home_page_mob@1x.png" alt="flower" />
+    </picture>
   </div>
 </section>
