@@ -1,0 +1,75 @@
+/* npm run dev */
+
+/**
+  |============================
+  | About section
+  |============================
+*/
+
+.about-section {
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title.about {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title.about {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-box {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.25;
+
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-text {
+    width: 322px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-right: 54px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-text {
+    width: 510px;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    margin-right: 90px;
+  }
+}
+
+.about-img {
+  min-width: 288px;
+  min-height: 178px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-img {
+    width: 344px;
+    height: 217px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-img {
+    width: 632px;
+    height: 344px;
+  }
+}

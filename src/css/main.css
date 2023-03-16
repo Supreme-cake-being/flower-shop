@@ -9,6 +9,7 @@
 @import url('./utils/variables.css');
 
 /* base */
+@import url('./base/fonts.css');
 @import url('./base/reset.css');
 @import url('./base/common.css');
 
@@ -23,3 +24,4 @@
 @import url('./layout/delivery.css');
 @import url('./layout/blog.css');
 @import url('./layout/footer.css');
+@import url('./layout/modal.css');
