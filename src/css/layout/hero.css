@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   height: 480px;
+
   margin: 0 auto;
   font-weight: 400;
 }
@@ -94,10 +95,27 @@
     margin-left: 46px;
     font-size: 24px;
   }
+  .btn-text-mobil,
+  .btn-arrow-mobil {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-badge {
+  .hero {
+    max-width: 1280px;
+    height: 878px;
+  }
+  .hero-title {
+    font-size: 160px;
+    --shift-to-y: -355px;
+    animation: move-vertical 1000ms ease-out 1000ms both;
+    bottom: 0;
+  }
+  .hero-title::after {
+    display: block;
+  }
+  .subtitle-hero {
     position: absolute;
     margin-left: 210px;
     font-size: 32px;
@@ -134,7 +152,6 @@
 }
 .btn-text-tabl {
   transform-origin: center;
-  animation: infinity-rotate 30s linear 4s infinite;
 }
 .btn-text {
   transform-origin: center;
@@ -252,6 +269,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 @media screen and (min-width: 768px) {
   .hero-img {
     display: none;
