@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close');
+       closeButtons = document.querySelectorAll('.js-modal-close'),
+       continueButtons  = document.querySelectorAll('.js-modal-next');
 
 
    /* Перебираем массив кнопок */
@@ -46,6 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
    }); // end foreach
+
+   continueButtons.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+         var parentModal = this.closest('.modal');
+
+         parentModal.classList.remove('active');
+      })
+   })
 
 
     document.body.addEventListener('keyup', function (e) {
