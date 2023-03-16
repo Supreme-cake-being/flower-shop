@@ -10,8 +10,9 @@
     line-height: 1.2;
     color: #FFFFFF;
 
-    background: var(--default-button-color);
+    background-color: var(--default-button-color);
     border-radius: 38px;
+    transition: background-color 300ms;
 }
 
 .subscribe-button{
@@ -25,16 +26,25 @@
     line-height: 1.33;
     color: #FFFFFF;
 
-    background: var(--default-button-color);
+    background-color: var(--default-button-color);
     border-radius: 38px;
+    transition: background-color 300ms;
 }
 
 .order-button:hover, .subscribe-button:hover{
-    background: var(--hover-button-color);
+    background-color: var(--hover-button-color);
+
+    animation: pulse;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }
 .order-button:focus, .subscribe-button:focus{
-    background: var(--focus-button-color);
+    background-color: var(--focus-button-color);
     box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+
+    animation: pulse;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }
 
 @media screen and (min-width:768px) {
@@ -49,66 +59,66 @@
 
 /* MODAL BUTTONS */
 
-.modal-order-button{
-    width: 240px;
-    height: 37px;
-
+.modal-btn {
+    width: 100%;
     font-weight: 600;
     font-size: 14px;
-    line-height: 1;
-    color: #FFFFFF;
-
-    background: var(--default-button-color);
+    line-height: calc(17 / 14);
     border-radius: 8px;
-}
+    padding: 10px 0;
+    background-color: var(--default-button-color);
+    color: #fff;
 
-@media screen and (min-width:768px) {
-    .modal-order-button{
-        width: 416px;
-        height: 50px;
-
-        font-size: 18px;
+    transition: background-color 300ms;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal-btn {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      padding: 14px 0;
     }
-}
-
-.modal-subscribe-button{
-    width: 236px;
-    height: 37px;
-
+  }
+  
+  .modal-btn:disabled,
+  .modal-btn:hover:disabled {
+    width: 100%;
     font-weight: 600;
     font-size: 14px;
-    line-height: 1;
-    color: #FFFFFF;
-
-    background: var(--default-button-color);
+    line-height: calc(17 / 14);
     border-radius: 8px;
-}
-
-@media screen and (min-width:768px) {
-    .modal-subscribe-button{
-        width: 336px;
-        height: 50px;
+    padding: 10px 0;
+    background-color: rgba(232, 111, 84, 0.4);
+    color: #fff;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal-btn:disabled,
+    .modal-btn:hover:disabled {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      padding: 14px 0;
     }
-}
+  }
 
-.modal-close-button{
-    width: 18px;
-    height: 18px;
-    background-color: #FFFFFF;
-}
-
-@media screen and (min-width:768px) {
-    .modal-close-button{
-        width: 24px;
-        height: 24px;
+  .modal-btn:hover {
+    background-color: var(--hover-button-color);
+  }
+  
+  .modal-btn:focus {
+    background-color: var(--focus-button-color);
+  }
+  
+  .modal-contactus-btn {
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal-contactus-btn {
+      margin-top: 14px;
     }
-}
-
-.modal-order-button:hover, .modal-subscribe-button:hover{
-    background: var(--hover-button-color);
-}
-.modal-order-button:focus, .modal-subscribe-button:focus{
-    background: var(--focus-button-color);
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
-}
-
+  }
+  
+  .modal-subscribe-btn {
+    margin-top: 18px;
+  }
